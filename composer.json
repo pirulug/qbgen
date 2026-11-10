@@ -1,0 +1,43 @@
+{
+    "name": "pirulug/qbgen",
+    "version": "0.0.1",
+    "description": "Libreria PHP para la generacion y renderizado de codigos QR y codigos de barras en formato vectorial SVG y mapa de bits PNG/WebP/JPEG.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pirulug"
+        }
+    ],
+    "require": {
+        "php": ">=8.5"
+    },
+    "suggest": {
+        "ext-gd": "Requerido para generar mapas de bits PNG, WebP o JPEG con GD."
+    },
+    "require-dev": {
+        "pestphp/pest": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pirulug\\QBgen\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pirulug\\QBgen\\Tests\\": "tests/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
